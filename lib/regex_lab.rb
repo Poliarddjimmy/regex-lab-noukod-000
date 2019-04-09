@@ -16,5 +16,5 @@ end
 
 
 def valid_phone_number?(phone)
-  phone = "(509)"
+  phone = "(509)3351 52-06000"
 end
