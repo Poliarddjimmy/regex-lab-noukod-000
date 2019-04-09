@@ -11,11 +11,13 @@ def words_five_letters_long(text)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-if text.match(/\A[A-Z]\w*\W\./) || text.match(/\a[a-z]\w*\w\./) 
-    return true
-  else
+first_letter = text.scan(/\w+/)[0]
+  if (text.scan(/\./)) && (first_letter == first_letter.upcase)
+    true
+  else  
     false
   end
+
 end
 
 
